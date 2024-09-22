@@ -1,0 +1,25 @@
+{
+  "name": "jffl-language-support",
+  "displayName": "JFFL Language Support",
+  "description": "Syntax Highlighting for VSCode",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jffl",
+      "aliases": ["just for fun Language", "jffl"],
+      "extensions": [".jffl",".JFFL"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "jffl",
+      "scopeName": "source.jffl",
+      "path": "./syntaxes/jffl.tmLanguage.json"
+    }]
+  }
+}

@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Just For Fun Language",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.jffl",
+				"match": "\\b(if|while|for|return|print|class|fun)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.jffl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.jffl",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.jffl"
+}
