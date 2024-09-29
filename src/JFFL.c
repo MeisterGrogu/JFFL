@@ -9,6 +9,7 @@
 
 static void repl(void) {
     char line[1024];
+    printf("This is the JFFL Terminal. Type your JFFL code and press 'ctrl+c' to exit.\n");
     for (;;) {
         printf("> ");
 
@@ -51,9 +52,9 @@ static char* readFile(const char* path) {
     return buffer;
 }
 
-static void runFile(const char* path){
-    char* source = readFile(path);
-    InterpretResult result = interpret(source);
+static void runFile(const char* path){ 
+	char* source = readFile(path);
+	InterpretResult result = interpret(source);
     free(source);
 
     if (result == INTERPRET_COMPILE_ERROR) exit(65);

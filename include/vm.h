@@ -1,4 +1,4 @@
-#ifndef jffl_vm_v
+#ifndef jffl_vm_h
 #define jffl_vm_h
 
 #include "chunk.h"
