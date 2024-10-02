@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "algorithm": "c",
+        "iterator": "c",
+        "xmemory": "c",
+        "xutility": "c",
+        "filesystem": "c",
+        "vector": "c",
+        "xstring": "c"
+    }
+}

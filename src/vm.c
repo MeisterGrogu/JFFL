@@ -17,9 +17,11 @@ static void resetStack() {
 
 void initVM(void){
     resetStack();
+    vm.objects = NULL;
 }
 
 void freeVM(void){
+    freeObjects();
 }
 
 static Value peek(int distance) {
