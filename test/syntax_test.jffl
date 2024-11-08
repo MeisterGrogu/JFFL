@@ -1,3 +1,1 @@
-if (1 + 1 == 10) {
-    print "true";
-}
+"Hello" + " " + "World" == "Hello World"
